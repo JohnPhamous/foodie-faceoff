@@ -8,6 +8,12 @@ dependencies:
   '@clerk/nextjs':
     specifier: ^5.3.1
     version: 5.3.1(next@14.2.5)(react-dom@18.3.1)(react@18.3.1)
+  '@liveblocks/client':
+    specifier: ^2.5.1
+    version: 2.5.1
+  '@liveblocks/react':
+    specifier: ^2.5.1
+    version: 2.5.1(react@18.3.1)
   next:
     specifier: 14.2.5
     version: 14.2.5(react-dom@18.3.1)(react@18.3.1)
@@ -229,6 +235,27 @@ packages:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.0
     dev: true
+
+  /@liveblocks/client@2.5.1:
+    resolution: {integrity: sha512-rc58cvA8miytM49jF617ruXJwOjnwTocKs899t8xLlqnYgF7bMU+Ts1ss3lR2kqL2jMrB4+5kIiZtoa/JEjTzw==}
+    dependencies:
+      '@liveblocks/core': 2.5.1
+    dev: false
+
+  /@liveblocks/core@2.5.1:
+    resolution: {integrity: sha512-vTwk6liurZL2qC13dNV9c6t/x94hcp1nhvIbumofFLNNqd3jI4GHG4kO1Hfc2fCRnnJKX16YpgUqIvR/wGdDpw==}
+    dev: false
+
+  /@liveblocks/react@2.5.1(react@18.3.1):
+    resolution: {integrity: sha512-corK4HLlUDO1HhD+lJzh3s7/7sk4uvcGDBnkkhEc6azrWBNEg6EWvug/ypd4yrucaFIPl3/XZmvHXAHxZTA6gw==}
+    peerDependencies:
+      react: ^16.14.0 || ^17 || ^18
+    dependencies:
+      '@liveblocks/client': 2.5.1
+      '@liveblocks/core': 2.5.1
+      react: 18.3.1
+      use-sync-external-store: 1.2.2(react@18.3.1)
+    dev: false
 
   /@next/env@14.2.5:
     resolution: {integrity: sha512-/zZGkrTOsraVfYjGP8uM0p6r0BDT6xWpkjdVbcz66PJVSpwXX3yNiRycxAuDfBKGWBrZBXRuK/YVlkNgxHGwmA==}
