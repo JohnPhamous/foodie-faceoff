@@ -6,6 +6,8 @@ declare global {
     Presence: {
       // Example, real-time cursor coordinates
       // cursor: { x: number; y: number };
+      displayName: string;
+      avatarUrl: string;
     };
 
     // The Storage tree for the room, for useMutation, useStorage, etc.
@@ -26,9 +28,9 @@ declare global {
 
     // Custom events, for useBroadcastEvent, useEventListener
     RoomEvent: {};
-      // Example has two events, using a union
-      // | { type: "PLAY" } 
-      // | { type: "REACTION"; emoji: "🔥" };
+    // Example has two events, using a union
+    // | { type: "PLAY" }
+    // | { type: "REACTION"; emoji: "🔥" };
 
     // Custom metadata set on threads, for useThreads, useCreateThread, etc.
     ThreadMetadata: {
