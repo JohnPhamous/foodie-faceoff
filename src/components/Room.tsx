@@ -14,6 +14,8 @@ export function Room() {
   const user = useUser();
   const displayName = user.user?.username || user.user?.firstName || "Unknown";
 
+  if (!user.isLoaded) return null;
+
   return (
     <LiveblocksProvider
       publicApiKey={process.env.NEXT_PUBLIC_LIVEBLOCKS_PUBLIC_KEY!}
