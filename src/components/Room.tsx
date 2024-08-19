@@ -1,5 +1,8 @@
 "use client";
 
+import { GyroPaint } from "@/components/games/gyro-paint";
+import { ShakeIt } from "@/components/games/shake-it";
+import { SpinToWin } from "@/components/games/spin-to-win";
 import { useUser } from "@clerk/nextjs";
 import {
   LiveblocksProvider,
@@ -69,6 +72,9 @@ function GameApp({ displayName }: { displayName: string }) {
           </li>
         ))}
       </ul>
+      {/* <GyroPaint /> */}
+      {/* <SpinToWin /> */}
+      <ShakeIt />
     </div>
   );
 }
