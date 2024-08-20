@@ -4,6 +4,7 @@ import { GyroPaint } from "@/components/games/gyro-paint";
 import { Scrolling } from "@/components/games/scrolling-race";
 import { ShakeIt } from "@/components/games/shake-it";
 import { SpinToWin } from "@/components/games/spin-to-win";
+import { T9Racer } from "@/components/games/t9-type-racer";
 import { Scoreboard } from "@/components/scoreboard";
 import { useMyPresence, useOthers } from "@liveblocks/react/suspense";
 import { AnimatePresence, motion } from "framer-motion";
@@ -86,6 +87,12 @@ export const Countdown = () => {
       return (
         <GameContainer>
           <Scrolling />
+        </GameContainer>
+      );
+    case "Diner Dash Texting":
+      return (
+        <GameContainer>
+          <T9Racer />
         </GameContainer>
       );
   }

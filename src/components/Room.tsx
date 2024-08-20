@@ -229,7 +229,7 @@ const GAMES = [
     name: "Blender Blitz",
   },
   {
-    name: "T9 Racer",
+    name: "Diner Dash Texting",
   },
   {
     name: "Pasta Prix",
