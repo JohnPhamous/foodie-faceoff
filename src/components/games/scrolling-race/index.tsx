@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 
 const NUMBER_OF_SHAKES = 8;
 
-export const ShakeIt = () => {
+export const Scrolling = () => {
   const { shakeCount, resetCount, requestPermission, isListening } =
     useShakeCounter();
   const [startTime, setStartTime] = useState(0);

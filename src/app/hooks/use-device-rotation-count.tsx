@@ -36,10 +36,10 @@ export function useDeviceRotationCount(): UseDeviceRotationResult {
       const diff = event.alpha - lastAlpha.current;
       if (Math.abs(diff) > 300) {
         // Crossed the 0/360 boundary
-        setRotationCount((prev) => prev + (diff > 0 ? -1 : 1));
+        setRotationCount((prev) => prev + (diff > 0 ? 1 : 1));
       } else if (Math.abs(diff) > 180) {
         // More than half a rotation
-        setRotationCount((prev) => prev + (diff > 0 ? 1 : -1));
+        setRotationCount((prev) => prev + (diff > 0 ? 1 : 1));
       }
     }
     lastAlpha.current = event.alpha;
